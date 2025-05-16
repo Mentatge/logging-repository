@@ -61,9 +61,6 @@ public class LoggingAspect {
             case "error":
                 if (log.isErrorEnabled()) log.error(message, args);
                 break;
-            case "trace":
-                if (log.isTraceEnabled()) log.trace(message, args);
-                break;
             default:
                 if (log.isInfoEnabled()) log.info(message, args);
         }
